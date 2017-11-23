@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello wordl</h1>
+
+<form th:action="@{/person/create}" method="post">
+    <p><input type="submit" value="Add"/></p>
+
+    <label>Imię</label>
+    <p><input type="text" th:field="${person.name}"/></p>
+    <label>Nazwisko</label>
+    <p><input type="text" th:field="${person.surname}"/></p>
+
+
+</form>
+</body>
+</html>

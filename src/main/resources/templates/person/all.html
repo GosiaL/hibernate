@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Osoby</title>
+</head>
+<body>
+<h1>People</h1>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+    <tr th:each="person:${people}">
+        <td th:text="${person.name}"/>
+        <td th:text="${person.surname}"/>
+
+    </tr>
+
+</table>
+
+</body>
+</html>
